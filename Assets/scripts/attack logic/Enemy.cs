@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("target").transform;
         if (target == null)
         {
-            Debug.LogError("Target (Boat) not found in the scene.");
+            Debug.LogError("Target not found in the scene.");
         }
     }
 

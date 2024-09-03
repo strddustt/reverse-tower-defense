@@ -11,10 +11,6 @@ public class TowerAttack : MonoBehaviour
     [SerializeField] internal int damage = 2;
     private float attackCooldown = 0f; // Cooldown timer
     internal bool attacked = false;
-    private void Start()
-    {
-        spawn = tower.transform;
-    }
 
 
 
@@ -41,6 +37,7 @@ public class TowerAttack : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             Enemy enemy = other.GetComponent<Enemy>();
+            Debug.Log("enemy entered radius");
             if (enemy != null && !enemiesInRange.Contains(enemy))
             {
                 enemiesInRange.Add(enemy);
@@ -57,6 +54,7 @@ public class TowerAttack : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             Enemy enemy = other.GetComponent<Enemy>();
+            Debug.Log("enemy left radius");
             if (enemy != null && enemiesInRange.Contains(enemy))
             {
                 enemiesInRange.Remove(enemy);
@@ -77,6 +75,7 @@ public class TowerAttack : MonoBehaviour
             currentEnemy = enemiesInRange[0];
             isAttacking = true;
             attackCooldown = atkspd; // Start the cooldown
+            Debug.Log("attacking enemy");
         }
     }
 
@@ -106,7 +105,9 @@ public class TowerAttack : MonoBehaviour
         else
         {
             currentEnemy.hp -= damage;
+            Debug.Log($"enemy hp left = {currentEnemy.hp}");
             currentEnemy.TakeDamage();
+            StartAttacking();
         }
     }
 }
