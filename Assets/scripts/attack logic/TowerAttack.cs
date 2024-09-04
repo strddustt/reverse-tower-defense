@@ -7,20 +7,24 @@ public class TowerAttack : MonoBehaviour
     internal Enemy currentEnemy;
     private bool isAttacking;
     private Transform spawn;
+    private Money money;
     [SerializeField] internal float atkspd = 0.5f; // Attack speed in seconds
     [SerializeField] internal int damage = 2;
     private float attackCooldown = 0f; // Cooldown timer
     internal bool attacked = false;
 
+    private void Start()
+    {
+        money = FindObjectOfType<Money>();
 
+        if (money == null)
+        {
+            Debug.Log("no money");
+        }
+    }
 
     void Update()
     {
-        //Vector3 MousePos = Input.mousePosition;
-        // Vector3 Position = transform.position;
-        //float difference = Vector3.Distance(Position, MousePos);
-        // Debug.Log(Position);
-        // Handle the cooldown timer
         if (isAttacking)
         {
             attackCooldown -= Time.deltaTime;
@@ -38,9 +42,9 @@ public class TowerAttack : MonoBehaviour
         {
             Enemy enemy = other.GetComponent<Enemy>();
             Debug.Log("enemy entered radius");
-            if (enemy != null && !enemiesInRange.Contains(enemy))
+            if (enemy != null && !enemiesInRange.Contains(enemy)) 
             {
-                enemiesInRange.Add(enemy);
+                enemiesInRange.Add(enemy); // adds enemy to list
                 if (!isAttacking)
                 {
                     StartAttacking();
@@ -68,7 +72,7 @@ public class TowerAttack : MonoBehaviour
         }
     }
 
-    void StartAttacking()
+    void StartAttacking() // specifically for attack cooldown and currentenemy selection. redirect attack requirements to here and not to attack()
     {
         if (enemiesInRange.Count > 0)
         {
@@ -87,7 +91,7 @@ public class TowerAttack : MonoBehaviour
             return;
         }
 
-        if (currentEnemy.IsDead())
+        if (currentEnemy.IsDead()) // enemy destroy logic is handled here so list removal is accurate
         {
             enemiesInRange.Remove(currentEnemy);
             currentEnemy = null;
@@ -96,17 +100,25 @@ public class TowerAttack : MonoBehaviour
             if (enemiesInRange.Count > 0)
             {
                 currentEnemy = enemiesInRange[0];
+                StartAttacking();
             }
             else
             {
                 isAttacking = false;
             }
         }
-        else
+        else //damage logic. using pre/posthp for accurate money calculations
         {
+            float prehp = currentEnemy.hp;
             currentEnemy.hp -= damage;
+            if (currentEnemy.hp < 0)
+            {
+                currentEnemy.hp = 0;
+            }
+            float posthp = currentEnemy.hp;
+            money.money += prehp - posthp;
             Debug.Log($"enemy hp left = {currentEnemy.hp}");
-            currentEnemy.TakeDamage();
+            currentEnemy.TakeDamage(); //death check for enemy
             StartAttacking();
         }
     }

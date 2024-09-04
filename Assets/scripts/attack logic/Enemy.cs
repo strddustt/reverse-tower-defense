@@ -6,8 +6,9 @@ public class Enemy : MonoBehaviour
 {
     private Transform target;
     public static int deaths = 0;
-    public int hp = 10;
+    public float hp = 10;
     public float speed = 2f;
+    internal float damagemultiplier = 1f;
     private bool isDead = false; // Flag to track if the enemy is dead
 
     void Start()
