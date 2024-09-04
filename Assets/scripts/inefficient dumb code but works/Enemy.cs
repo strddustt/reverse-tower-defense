@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private Transform target;
     public static int deaths = 0;
     public float hp = 10;
     public float speed = 2f;
@@ -13,23 +12,15 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("target").transform;
-        if (target == null)
-        {
-            Debug.LogError("Target not found in the scene.");
-        }
+
     }
 
     void Update()
     {
-        MoveTowardsTarget();
+
     }
 
-    void MoveTowardsTarget()
-    {
-        Vector3 direction = (target.position - transform.position).normalized;
-        transform.position += direction * speed * Time.deltaTime;
-    }
+    
 
     public void TakeDamage()
     {
@@ -47,8 +38,6 @@ public class Enemy : MonoBehaviour
     {
         if (isDead)
         {
-            deaths++;
-            Destroy(gameObject);
             return true;
         }
         else

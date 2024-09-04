@@ -8,6 +8,7 @@ public class TowerAttack : MonoBehaviour
     private bool isAttacking;
     private Transform spawn;
     private Money money;
+    private CircleCollider2D circleCollider;
     [SerializeField] internal float atkspd = 0.5f; // Attack speed in seconds
     [SerializeField] internal int damage = 2;
     private float attackCooldown = 0f; // Cooldown timer
@@ -16,11 +17,12 @@ public class TowerAttack : MonoBehaviour
     private void Start()
     {
         money = FindObjectOfType<Money>();
-
+        circleCollider = GetComponent<CircleCollider2D>();
         if (money == null)
         {
             Debug.Log("no money");
         }
+        circleCollider.enabled = true;
     }
 
     void Update()
@@ -53,7 +55,7 @@ public class TowerAttack : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other) //enemy death triggers this, so attacks continue
     {
         if (other.CompareTag("Enemy"))
         {
@@ -91,22 +93,6 @@ public class TowerAttack : MonoBehaviour
             return;
         }
 
-        if (currentEnemy.IsDead()) // enemy destroy logic is handled here so list removal is accurate
-        {
-            enemiesInRange.Remove(currentEnemy);
-            currentEnemy = null;
-            Destroy(currentEnemy);
-
-            if (enemiesInRange.Count > 0)
-            {
-                currentEnemy = enemiesInRange[0];
-                StartAttacking();
-            }
-            else
-            {
-                isAttacking = false;
-            }
-        }
         else //damage logic. using pre/posthp for accurate money calculations
         {
             float prehp = currentEnemy.hp;

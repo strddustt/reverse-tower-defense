@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class BaseLogic : MonoBehaviour
 {
-    Enemy enemy;
+    Enemy enemylogic;
+    GameObject enemy;
     Money money;
     // Start is called before the first frame update
     void Start()
@@ -22,8 +23,9 @@ public class BaseLogic : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            enemy = other.GetComponent<Enemy>();
-            money.money += enemy.hp * enemy.damagemultiplier;
+            enemylogic = other.GetComponent<Enemy>();
+            enemy = other.GetComponent<GameObject>();
+            money.money += enemylogic.hp * enemylogic.damagemultiplier * 2f;
             Destroy(enemy);
 
         }

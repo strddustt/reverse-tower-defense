@@ -5,7 +5,8 @@ using UnityEngine;
 public class SpawnLogic : MonoBehaviour
 {
     public Transform spawner;
-    public GameObject enemyprefab;
+    public GameObject weakestenemyprefab;
+    public GameObject selfdestructenemy;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,12 @@ public class SpawnLogic : MonoBehaviour
         
     }
 
-    public void OnClick()
+    public void OnClickweakest()
     {
-        Instantiate(enemyprefab, spawner.position, spawner.rotation);
+        Instantiate(weakestenemyprefab, spawner.position, spawner.rotation);
+    }
+    public void OnClickSelfDestruct()
+    {
+        Instantiate(selfdestructenemy, spawner.position, spawner.rotation);
     }
 }
