@@ -12,7 +12,7 @@ public class TowerAttack : MonoBehaviour
     [SerializeField] internal float atkspd = 0.5f; // Attack speed in seconds
     [SerializeField] internal int damage = 2;
     private float attackCooldown = 0f; // Cooldown timer
-    internal bool attacked = false;
+    public GameObject projectile;
 
     private void Start()
     {
@@ -95,16 +95,17 @@ public class TowerAttack : MonoBehaviour
 
         else //damage logic. using pre/posthp for accurate money calculations
         {
-            float prehp = currentEnemy.hp;
-            currentEnemy.hp -= damage;
-            if (currentEnemy.hp < 0)
-            {
-                currentEnemy.hp = 0;
-            }
-            float posthp = currentEnemy.hp;
-            Money.money += prehp - posthp;
-            Debug.Log($"enemy hp left = {currentEnemy.hp}");
-            currentEnemy.TakeDamage(); //death check for enemy
+            //float prehp = currentEnemy.hp;
+            //currentEnemy.hp -= damage;
+            //if (currentEnemy.hp < 0)
+            //{
+            //    currentEnemy.hp = 0;
+            //}
+            //float posthp = currentEnemy.hp;
+            //Money.money += prehp - posthp;
+            //Debug.Log($"enemy hp left = {currentEnemy.hp}");
+            //currentEnemy.IsDead(); //death check for enemy
+            projectile.SetActive(true);
             StartAttacking();
         }
     }

@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        death = GetComponent<SelfDestructEnemy>(); 
+        death = GetComponent<SelfDestructEnemy>();
         sprite = GetComponent<SpriteRenderer>();
     }
 
@@ -23,38 +23,12 @@ public class Enemy : MonoBehaviour
 
     }
 
-    
-
-    public void TakeDamage()
-    {
-        if (IsDead())
-            return;
-
-        if (hp <= 0)
-        {
-            hp = 0;
-            isDead = true;
-        }
-    }
-
     public bool IsDead() // Method to check if the enemy is dead
     {
-        if (isDead)
+        if (hp == 0)
         {
-            if (death == null)
-            {
-                Destroy(gameObject);
-            }
-            else
-            {
-                sprite.enabled = false;
-            }
-            return true;
-
+            Destroy(gameObject);
         }
-        else
-        {
-            return false;
-        }
+        return isDead;
     }
 }
