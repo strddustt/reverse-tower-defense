@@ -14,7 +14,7 @@ public class tileshower : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tileposition = tile.transform;
+        //tileposition = tile.transform;
     }
 
     // Update is called once per frame

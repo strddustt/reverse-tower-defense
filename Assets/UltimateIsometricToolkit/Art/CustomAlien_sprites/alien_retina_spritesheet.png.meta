@@ -209,694 +209,631 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alien2_01
+      name: alien_retina_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 96
-        y: 207
-        width: 85
-        height: 43
-      alignment: 9
-      pivot: {x: 0.5058824, y: 1.4883721}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02305410000000000800000000000000
-      internalID: 21300000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_02
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 259
-        width: 95
-        height: 125
-      alignment: 9
-      pivot: {x: 0.5263158, y: 0.512}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22305410000000000800000000000000
-      internalID: 21300002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_03
-      rect:
-        serializedVersion: 2
-        x: 396
-        y: 375
-        width: 95
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5263158, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 42305410000000000800000000000000
-      internalID: 21300004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_04
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 2
+        x: 6
+        y: 898
         width: 92
-        height: 126
-      alignment: 9
-      pivot: {x: 0.48913044, y: 0.50793654}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 62305410000000000800000000000000
-      internalID: 21300006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_08
-      rect:
-        serializedVersion: 2
-        x: 412
-        y: 765
-        width: 99
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5151515, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 82305410000000000800000000000000
-      internalID: 21300008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_09
-      rect:
-        serializedVersion: 2
-        x: 293
-        y: 251
-        width: 92
-        height: 128
-      alignment: 9
-      pivot: {x: 0.51086956, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2305410000000000800000000000000
-      internalID: 21300010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_10
-      rect:
-        serializedVersion: 2
-        x: 315
-        y: 895
-        width: 100
-        height: 128
-      alignment: 9
-      pivot: {x: 0.49, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c2305410000000000800000000000000
-      internalID: 21300012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_12
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 895
-        width: 103
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5048544, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e2305410000000000800000000000000
-      internalID: 21300014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_13
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 379
-        width: 95
-        height: 127
-      alignment: 9
-      pivot: {x: 0.51578945, y: 0.503937}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03305410000000000800000000000000
-      internalID: 21300016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_14
-      rect:
-        serializedVersion: 2
-        x: 298
-        y: 381
-        width: 96
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5104167, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23305410000000000800000000000000
-      internalID: 21300018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_15
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 252
-        width: 94
-        height: 125
-      alignment: 9
-      pivot: {x: 0.5, y: 0.512}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 43305410000000000800000000000000
-      internalID: 21300020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_16
-      rect:
-        serializedVersion: 2
-        x: 310
-        y: 641
-        width: 99
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5050505, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 63305410000000000800000000000000
-      internalID: 21300022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_18
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1
-        width: 90
-        height: 127
-      alignment: 9
-      pivot: {x: 0.5, y: 0.503937}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 83305410000000000800000000000000
-      internalID: 21300024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_19
-      rect:
-        serializedVersion: 2
-        x: 411
-        y: 635
-        width: 99
-        height: 128
-      alignment: 9
-      pivot: {x: 0.4949495, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a3305410000000000800000000000000
-      internalID: 21300026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_20
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 516
-        width: 97
-        height: 128
-      alignment: 9
-      pivot: {x: 0.46391752, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c3305410000000000800000000000000
-      internalID: 21300028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_21
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 638
-        width: 99
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5151515, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e3305410000000000800000000000000
-      internalID: 21300030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_22
-      rect:
-        serializedVersion: 2
-        x: 417
-        y: 895
-        width: 94
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5212766, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 04305410000000000800000000000000
-      internalID: 21300032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_35
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 248
-        width: 91
-        height: 128
-      alignment: 9
-      pivot: {x: 0.50549453, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 24305410000000000800000000000000
-      internalID: 21300034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_36
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 508
-        width: 97
-        height: 128
-      alignment: 9
-      pivot: {x: 0.53608245, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 44305410000000000800000000000000
-      internalID: 21300036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_37
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 386
-        width: 97
-        height: 128
-      alignment: 9
-      pivot: {x: 0.53608245, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 64305410000000000800000000000000
-      internalID: 21300038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_41
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 638
-        width: 99
-        height: 125
-      alignment: 9
-      pivot: {x: 0.53535354, y: 0.512}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 84305410000000000800000000000000
-      internalID: 21300040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_42
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 765
-        width: 100
-        height: 128
-      alignment: 9
-      pivot: {x: 0.55, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a4305410000000000800000000000000
-      internalID: 21300042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_43
-      rect:
-        serializedVersion: 2
-        x: 310
-        y: 771
-        width: 100
         height: 122
-      alignment: 9
-      pivot: {x: 0.47, y: 0.5163934}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c4305410000000000800000000000000
-      internalID: 21300044
+      spriteID: c0e6d249972ab844089fe1d8958aa933
+      internalID: -1427059212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien2_45
+      name: alien_retina_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 130
+        x: 115
+        y: 894
+        width: 88
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc358fa2253f8ee4396af0d0452c7f1f
+      internalID: 501748277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 894
+        width: 88
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0669a9e1d4b5805429fe23f0b305c21b
+      internalID: 810768804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 894
         width: 93
-        height: 127
-      alignment: 9
-      pivot: {x: 0.516129, y: 0.503937}
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e4305410000000000800000000000000
-      internalID: 21300046
+      spriteID: ee87b31abd5759748850735dbd7c3b94
+      internalID: -980617802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien2_46
+      name: alien_retina_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 199
-        y: 508
-        width: 97
-        height: 128
-      alignment: 9
-      pivot: {x: 0.53608245, y: 0.5}
+        x: 422
+        y: 894
+        width: 88
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 05305410000000000800000000000000
-      internalID: 21300048
+      spriteID: cddca27daefbe584498fc869b6cb3e49
+      internalID: -1834091847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien2_47
+      name: alien_retina_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 772
+        width: 92
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881efa9324f611447b53765091d0b742
+      internalID: 44914568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 764
+        width: 88
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd572478f986944282ed1ba559773c1
+      internalID: -1558369143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 767
+        width: 90
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c916262de481f45a57c1aec3f013d1
+      internalID: 439229444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 773
+        width: 92
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3beb738d1cc4043bee3c0232cac1bd
+      internalID: -1871410655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 764
+        width: 94
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecd7e76531ab9143a21177685ebfd9d
+      internalID: 539593106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 643
+        width: 92
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c116e72d7c906a84dbeae613cf3659d0
+      internalID: 1425861014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 641
+        width: 90
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab1d7bea8d96d345807f82f2ef17a9e
+      internalID: 338226436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_12
       rect:
         serializedVersion: 2
         x: 212
-        y: 895
-        width: 101
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5148515, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25305410000000000800000000000000
-      internalID: 21300050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_48
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 511
-        width: 99
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5050505, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 45305410000000000800000000000000
-      internalID: 21300052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien2_49
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 378
+        y: 637
         width: 94
         height: 128
-      alignment: 9
-      pivot: {x: 0.5212766, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 65305410000000000800000000000000
-      internalID: 21300054
+      spriteID: 3d8e14aa90b99664aabc57f2f084d658
+      internalID: -572525549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien2_51
+      name: alien_retina_spritesheet_13
       rect:
         serializedVersion: 2
-        x: 1
-        y: 646
-        width: 100
+        x: 315
+        y: 508
+        width: 89
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c7d96ff2f1caa458341cf3bdc2728c
+      internalID: 2120733174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 632
+        width: 93
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d3b98eec068e941b47b830d2b4ef37
+      internalID: 1753404239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 385
+        width: 95
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7202489200e423a4f9937390ed6267f9
+      internalID: -2134267778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 507
+        width: 88
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9728cedf5a2f14242826c66c1c62ff07
+      internalID: -317446053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 507
+        width: 88
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4876670b0b3403d498f856e9b8c8f72e
+      internalID: 1525226130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 504
+        width: 88
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b4cf8f8c8175b499af094e48163e5a
+      internalID: 1600174666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 258
+        width: 88
         height: 125
-      alignment: 9
-      pivot: {x: 0.53, y: 0.512}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 85305410000000000800000000000000
-      internalID: 21300056
+      spriteID: c3344ced996d94347ae363591a5df362
+      internalID: 607709343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien2_52
+      name: alien_retina_spritesheet_20
       rect:
         serializedVersion: 2
-        x: 208
-        y: 768
-        width: 100
+        x: 105
+        y: 378
+        width: 88
         height: 125
-      alignment: 9
-      pivot: {x: 0.54, y: 0.512}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a5305410000000000800000000000000
-      internalID: 21300058
+      spriteID: 1b5ab14dd0bfe8c4d86f0d27762b2d80
+      internalID: 926996478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien2_53
+      name: alien_retina_spritesheet_21
       rect:
         serializedVersion: 2
-        x: 410
-        y: 505
-        width: 99
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5252525, y: 0.5}
+        x: 196
+        y: 247
+        width: 94
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c5305410000000000800000000000000
-      internalID: 21300060
+      spriteID: 80a9b5f0a3bfab849887e4f7d2d74dae
+      internalID: 326814186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien2_54
+      name: alien_retina_spritesheet_22
       rect:
         serializedVersion: 2
-        x: 1
-        y: 899
-        width: 104
-        height: 124
-      alignment: 9
-      pivot: {x: 0.4903846, y: 0.516129}
+        x: 303
+        y: 380
+        width: 88
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e5305410000000000800000000000000
-      internalID: 21300062
+      spriteID: e4af95cd40b3b4641bbd4b3dd9eb15cb
+      internalID: -357271902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: alien2_55
+      name: alien_retina_spritesheet_23
       rect:
         serializedVersion: 2
-        x: 1
-        y: 773
-        width: 103
-        height: 124
-      alignment: 9
-      pivot: {x: 0.49514562, y: 0.516129}
+        x: 402
+        y: 374
+        width: 88
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 06305410000000000800000000000000
-      internalID: 21300064
+      spriteID: 7f0b6c3fdd3f92149a4b7378b7571b25
+      internalID: 388999920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 129
+        width: 88
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e6d993dbf146047badeaa83e90766a
+      internalID: 1839565194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 251
+        width: 88
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb56b83f9deb13843b0e0d1801680573
+      internalID: -987406768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 250
+        width: 88
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30ff720108edab46ac05d029dcdbdb0
+      internalID: -535599259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 206
+        width: 70
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b9db8d2a7eb5e4392b3dead5ca74e5
+      internalID: 1856687924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 88
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d6e77c59468fe43ba7480869860428
+      internalID: 1360898828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien_retina_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1
+        width: 88
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e494ac62156c8e43b84ef48f7c8a5de
+      internalID: 1938761024
       vertices: []
       indices: 
       edges: []
@@ -904,7 +841,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d2535a5e63dd7d94bb8faf74676ca673
     internalID: 0
     vertices: []
     indices: 
@@ -912,39 +849,36 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      alien2_01: 21300000
-      alien2_02: 21300002
-      alien2_03: 21300004
-      alien2_04: 21300006
-      alien2_08: 21300008
-      alien2_09: 21300010
-      alien2_10: 21300012
-      alien2_12: 21300014
-      alien2_13: 21300016
-      alien2_14: 21300018
-      alien2_15: 21300020
-      alien2_16: 21300022
-      alien2_18: 21300024
-      alien2_19: 21300026
-      alien2_20: 21300028
-      alien2_21: 21300030
-      alien2_22: 21300032
-      alien2_35: 21300034
-      alien2_36: 21300036
-      alien2_37: 21300038
-      alien2_41: 21300040
-      alien2_42: 21300042
-      alien2_43: 21300044
-      alien2_45: 21300046
-      alien2_46: 21300048
-      alien2_47: 21300050
-      alien2_48: 21300052
-      alien2_49: 21300054
-      alien2_51: 21300056
-      alien2_52: 21300058
-      alien2_53: 21300060
-      alien2_54: 21300062
-      alien2_55: 21300064
+      alien_retina_spritesheet_0: -1427059212
+      alien_retina_spritesheet_1: 501748277
+      alien_retina_spritesheet_10: 1425861014
+      alien_retina_spritesheet_11: 338226436
+      alien_retina_spritesheet_12: -572525549
+      alien_retina_spritesheet_13: 2120733174
+      alien_retina_spritesheet_14: 1753404239
+      alien_retina_spritesheet_15: -2134267778
+      alien_retina_spritesheet_16: -317446053
+      alien_retina_spritesheet_17: 1525226130
+      alien_retina_spritesheet_18: 1600174666
+      alien_retina_spritesheet_19: 607709343
+      alien_retina_spritesheet_2: 810768804
+      alien_retina_spritesheet_20: 926996478
+      alien_retina_spritesheet_21: 326814186
+      alien_retina_spritesheet_22: -357271902
+      alien_retina_spritesheet_23: 388999920
+      alien_retina_spritesheet_24: 1839565194
+      alien_retina_spritesheet_25: -987406768
+      alien_retina_spritesheet_26: -535599259
+      alien_retina_spritesheet_27: 1856687924
+      alien_retina_spritesheet_28: 1360898828
+      alien_retina_spritesheet_29: 1938761024
+      alien_retina_spritesheet_3: -980617802
+      alien_retina_spritesheet_4: -1834091847
+      alien_retina_spritesheet_5: 44914568
+      alien_retina_spritesheet_6: -1558369143
+      alien_retina_spritesheet_7: 439229444
+      alien_retina_spritesheet_8: -1871410655
+      alien_retina_spritesheet_9: 539593106
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
