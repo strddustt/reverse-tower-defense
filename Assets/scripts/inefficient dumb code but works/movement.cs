@@ -10,11 +10,7 @@ public class movement : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("target").transform;
-        enemy = GetComponentInChildren<Enemy>();
-        if (enemy == null)
-        {
-            enemy = GetComponent<Enemy>();
-        }
+        enemy = GetComponent<Enemy>();
 
     }
 

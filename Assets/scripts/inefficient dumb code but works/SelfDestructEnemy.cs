@@ -8,11 +8,10 @@ public class SelfDestructEnemy : MonoBehaviour
     CircleCollider2D circleCollider;
     TowerAttack tower;
     int cooldown = 2;
-    internal bool end = false;
     // Start is called before the first frame update
     void Start()
     {
-        self = transform.parent.Find("Enemy").GetComponent<Enemy>();
+        self = GetComponent<Enemy>();
         circleCollider = GetComponent<CircleCollider2D>();
     }
 
@@ -30,7 +29,7 @@ public class SelfDestructEnemy : MonoBehaviour
         if (collision.CompareTag("tower"))
         {
             tower = collision.GetComponent<TowerAttack>();
-            towercooldown();
+            StartCoroutine(towercooldown());
         }
     }
     IEnumerator towercooldown()
@@ -39,7 +38,7 @@ public class SelfDestructEnemy : MonoBehaviour
         circleCollider.enabled = false;
         yield return new WaitForSeconds(cooldown);
         tower.enabled = true;
-        end = true;
+        Destroy(gameObject);
         yield break;
     }
 }

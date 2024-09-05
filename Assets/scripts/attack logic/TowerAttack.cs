@@ -102,7 +102,7 @@ public class TowerAttack : MonoBehaviour
                 currentEnemy.hp = 0;
             }
             float posthp = currentEnemy.hp;
-            money.money += prehp - posthp;
+            Money.money += prehp - posthp;
             Debug.Log($"enemy hp left = {currentEnemy.hp}");
             currentEnemy.TakeDamage(); //death check for enemy
             StartAttacking();

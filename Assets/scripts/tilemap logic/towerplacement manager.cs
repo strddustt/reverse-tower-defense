@@ -1,12 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
-public class Money : MonoBehaviour
+public class towerplacementmanager : MonoBehaviour
 {
-    public TextMeshProUGUI moneyText;
-    public static float money;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +13,6 @@ public class Money : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moneyText.text = $"Money: {money}";
+        
     }
 }

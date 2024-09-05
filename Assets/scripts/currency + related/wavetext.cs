@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Money : MonoBehaviour
+public class wavetext : MonoBehaviour
 {
-    public TextMeshProUGUI moneyText;
-    public static float money;
+    TextMeshProUGUI text;
     // Start is called before the first frame update
     void Start()
     {
-        
+        text = GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        moneyText.text = $"Money: {money}";
+        text.text = $"wave {BaseLogic.wave}";
     }
 }
