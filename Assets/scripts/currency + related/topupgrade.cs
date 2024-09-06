@@ -45,9 +45,6 @@ public class topupgrade : MonoBehaviour
             textchange = text.text;
             upgradevar++;
             Money.money -= 100;
-        }
-        else if (upgradevar >= 2)
-        {
             text.text = "max upgrades";
         }
         else

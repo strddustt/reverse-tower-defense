@@ -11,6 +11,7 @@ public class gameoverscript : MonoBehaviour
         enemy.speed = 2;
         enemy.damagemultiplier = 1;
         enemy.hp = 10;
+        Money.money = 10;
         SceneManager.LoadScene("Main_Scene");
     }
 
