@@ -16,6 +16,9 @@ public class Enemy : MonoBehaviour
     {
         death = GetComponent<SelfDestructEnemy>();
         sprite = GetComponent<SpriteRenderer>();
+        hp = 10;
+        damagemultiplier = 1;
+        speed = 2;
     }
 
     void Update()
