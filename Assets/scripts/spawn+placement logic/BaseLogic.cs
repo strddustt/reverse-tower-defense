@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ public class BaseLogic : MonoBehaviour
 {
     [SerializeField] private Enemy enemylogic;
     private GameObject enemy;
-    internal float threshold = 10;
+    internal float threshold = 20;
     public static int wave = 0;
     healthbar health;
     // Start is called before the first frame update
@@ -37,6 +38,12 @@ public class BaseLogic : MonoBehaviour
                 threshold = 50 * wave;
                 Debug.Log($"wave {wave}. threshold: {threshold}");
                 health.SetHealth();
+                Enemy[] enemies = FindObjectsOfType<Enemy>();
+                foreach (Enemy enemy in enemies)
+                {
+                    Money.money += 5;
+                    Destroy(enemy.gameObject);
+                }
             }
             Destroy(enemy);
         }

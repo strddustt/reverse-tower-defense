@@ -9,10 +9,12 @@ public class bottomupgrade : MonoBehaviour
     private int upgradevar = 0;
     public TextMeshProUGUI text;
     private string textchange;
+    public Sprite newsprite;
+    private SpriteRenderer spriterenderer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        spriterenderer = enemy.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -25,6 +27,9 @@ public class bottomupgrade : MonoBehaviour
         if (upgradevar == 0 && Money.money >= 1000)
         {
             enemy.upgrader(5, 1, 50);
+            spriterenderer.sprite = newsprite;
+            Money.money -= 1000;
+            text.text = "max upgrade";
         }
     }
 }

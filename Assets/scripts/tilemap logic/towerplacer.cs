@@ -16,7 +16,7 @@ public class towerplacer : MonoBehaviour
     public int rnginc = 0;
     private bool limiter = false;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         cellPosition = tilemap.WorldToCell(transform.position);
         tower = GetComponent<TowerAttack>();
@@ -29,6 +29,7 @@ public class towerplacer : MonoBehaviour
     {
         if (BaseLogic.wave == wavetoplace && limiter == false)
         {
+            Debug.Log("placing");
             placeontile();
             limiter = true;
         }
@@ -41,6 +42,8 @@ public class towerplacer : MonoBehaviour
     }
     public void placeontile()
     {
+
+        Debug.Log("placing");
         tilemap.SetTile(cellPosition, tile);
         tower.enabled = true;
     }

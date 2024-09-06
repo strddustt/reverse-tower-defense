@@ -26,14 +26,17 @@ public class topupgrade : MonoBehaviour
         if (upgradevar == 0 && Money.money >= 25)
         {
             enemy.upgrader(0.5f, 0.1f, 0);
-            text.text = "+0.5 damage, +0.05 speed and +2 hp";
+            text.text = "+0.5 damage, +0.05 speed and +2 hp                $75";
             textchange = text.text;
+            Money.money -= 25;
             upgradevar++;
         }
         else if (upgradevar == 1 && Money.money >= 75)
         {
             enemy.upgrader(0.5f, 0.05f, 2);
+            text.text = "+1 damage, +0.1 speed, +5 hp                       $75";
             textchange = text.text;
+            Money.money -= 75;
             upgradevar++;
         }
         else if (upgradevar == 2 && Money.money >= 100)
@@ -41,6 +44,7 @@ public class topupgrade : MonoBehaviour
             enemy.upgrader(1f, 0.1f, 5);
             textchange = text.text;
             upgradevar++;
+            Money.money -= 100;
         }
         else if (upgradevar >= 2)
         {

@@ -7,6 +7,7 @@ public class SpawnLogic : MonoBehaviour
     public Transform spawner;
     public GameObject weakestenemyprefab;
     public GameObject selfdestructenemy;
+    private float cooldown = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +17,17 @@ public class SpawnLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        cooldown -= Time.deltaTime;
     }
 
     public void OnClickweakest()
     {
-        Instantiate(weakestenemyprefab, spawner.position, spawner.rotation);
+        if (Money.money >= 5 && cooldown <= 0)
+        {
+            Instantiate(weakestenemyprefab, spawner.position, spawner.rotation);
+            cooldown = 0.5f;
+            Money.money -= 5;
+        }
     }
     public void OnClickSelfDestruct()
     {

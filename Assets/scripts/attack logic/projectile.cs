@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
     private Enemy enemy;
     private TowerAttack towerattack;
     private Transform target;
-    public int speed = 1;
+    public int speed = 10;
     private Transform pos;
     private Transform towerpos;
     bool atack = false;
@@ -46,7 +46,7 @@ public class Projectile : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.gameObject == enemy.gameObject)
         {
             float hpbeforeattack = enemy.hp;
             enemy.hp -= towerattack.damage;
