@@ -15,6 +15,7 @@ public class topupgrade : MonoBehaviour
         enemy.hp = 10;
         enemy.damagemultiplier = 1;
         enemy.speed = 2;
+        Money.money = 10;
     }
 
     // Update is called once per frame

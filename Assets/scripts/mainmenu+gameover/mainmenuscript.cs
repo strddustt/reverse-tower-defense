@@ -7,8 +7,6 @@ public class mainmenuscript : MonoBehaviour
 {
     public void OnPlayButton()
     {
-
-        Money.money = 10;
         SceneManager.LoadScene("Main_Scene");
     }
 
