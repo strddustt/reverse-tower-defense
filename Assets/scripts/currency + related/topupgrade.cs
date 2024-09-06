@@ -12,7 +12,9 @@ public class topupgrade : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        enemy.hp = 10;
+        enemy.damagemultiplier = 1;
+        enemy.speed = 2;
     }
 
     // Update is called once per frame
