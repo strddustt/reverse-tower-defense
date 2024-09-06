@@ -7,7 +7,7 @@ public class mainmenuscript : MonoBehaviour
 {
     public void OnPlayButton()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Main_Scene");
     }
 
     public void OnQuitButton()
