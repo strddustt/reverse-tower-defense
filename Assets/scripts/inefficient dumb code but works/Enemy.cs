@@ -9,8 +9,8 @@ public class Enemy : MonoBehaviour
     public float speed = 2f;
     internal float damagemultiplier = 1f;
     private bool isDead = false; // Flag to track if the enemy is dead
-    SpriteRenderer sprite;
-    SelfDestructEnemy death;
+    private SpriteRenderer sprite;
+    private SelfDestructEnemy death;
 
     void Start()
     {
@@ -30,5 +30,11 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
         return isDead;
+    }
+    public void upgrader(float damage, float speed, float health)
+    {
+        damagemultiplier += damage;
+        this.speed += speed;
+        hp += health;
     }
 }

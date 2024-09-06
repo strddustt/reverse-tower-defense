@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TowerAttack : MonoBehaviour
@@ -12,7 +13,7 @@ public class TowerAttack : MonoBehaviour
     [SerializeField] internal float atkspd = 0.5f; // Attack speed in seconds
     [SerializeField] internal int damage = 2;
     private float attackCooldown = 0f; // Cooldown timer
-    public GameObject projectile;
+    public GameObject[] projectiles;
 
     private void Start()
     {
@@ -105,8 +106,39 @@ public class TowerAttack : MonoBehaviour
             //Money.money += prehp - posthp;
             //Debug.Log($"enemy hp left = {currentEnemy.hp}");
             //currentEnemy.IsDead(); //death check for enemy
-            projectile.SetActive(true);
-            StartAttacking();
+
+            //projectile.SetActive(true);
+            FindActive();
+            if (FindActive() != null)
+            {
+                FindActive().SetActive(true);
+                Debug.Log($"activated {FindActive()}");
+            }
+            else
+            {
+                Debug.Log("no active objects");
+            }
+            if (damage > currentEnemy.hp && enemiesInRange.Count > 1)
+            {
+                currentEnemy = enemiesInRange[1];
+                Debug.Log("switched enemies");
+            }
+                StartAttacking();
         }
+    }
+    GameObject FindActive()
+    {
+        for (int i = 0; i < 4;)
+        {
+            if (!projectiles[i].activeSelf)
+            {
+                return projectiles[i];
+            }
+            else
+            {
+                i++;
+            }
+        }
+        return null;
     }
 }

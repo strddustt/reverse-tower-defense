@@ -7,20 +7,21 @@ public class Projectile : MonoBehaviour
 {
     public GameObject tower;
     private Enemy enemy;
-    TowerAttack towerattack;
+    private TowerAttack towerattack;
     private Transform target;
-    public int speed = 1000;
-    Transform pos;
-    Transform towerpos;
+    public int speed = 1;
+    private Transform pos;
+    private Transform towerpos;
     bool atack = false;
 
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         pos = GetComponent<Transform>();
         towerpos = tower.GetComponent<Transform>();
         towerattack = tower.GetComponent<TowerAttack>();
-        pos = towerpos;
+        pos.position = towerpos.position;
+        Debug.Log($"tower is set to {tower.ToString()}");
     }
     private void OnEnable()
     {
@@ -32,16 +33,16 @@ public class Projectile : MonoBehaviour
     {
         if (enemy != null)
         {
-            atack = true;
-            
             Vector3 direction = (target.position - transform.position).normalized;
             transform.position += direction * speed * Time.deltaTime;
         }
-        if (towerattack.currentEnemy == null)
+        else
         {
+            Debug.Log("no enemy");
             pos.position = towerpos.position;
             gameObject.SetActive(false);
         }
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -54,8 +55,9 @@ public class Projectile : MonoBehaviour
                 enemy.hp = 0;
             }
             Money.money += hpbeforeattack - enemy.hp;
-            pos = towerpos;
+            Debug.Log($"dealt damage: {towerattack.damage}. enemy hp left: {enemy.hp}");
             enemy.IsDead();
+            pos.position = towerpos.position;
             gameObject.SetActive(false);
         }
     }

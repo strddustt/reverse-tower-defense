@@ -5,8 +5,8 @@ using UnityEngine;
 public class SelfDestructEnemy : MonoBehaviour
 {
     internal Enemy self;
-    CircleCollider2D circleCollider;
-    TowerAttack tower;
+    private CircleCollider2D circleCollider;
+    private TowerAttack tower;
     int cooldown = 2;
     // Start is called before the first frame update
     void Start()

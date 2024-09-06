@@ -5,7 +5,7 @@ using UnityEngine;
 public class movement : MonoBehaviour
 {
     private Transform target;
-    Enemy enemy;
+    private Enemy enemy;
     // Start is called before the first frame update
     void Start()
     {

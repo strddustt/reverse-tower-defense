@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class BaseLogic : MonoBehaviour
 {
-    Enemy enemylogic;
-    GameObject enemy;
+    [SerializeField] private Enemy enemylogic;
+    private GameObject enemy;
     internal float threshold = 10;
     public static int wave = 0;
     healthbar health;
